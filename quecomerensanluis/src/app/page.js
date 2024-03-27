@@ -26,7 +26,7 @@ export default function Home() {
 
 
         <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
-          <img width="70" height="70" src="next.svg">
+          <img width="70" height="70" src="next.svg" />
           Carnes y Lomos
         </button>
 
