@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <main className="bg-indigo-600 flex flex-col min-h-screen">
+
 
 
 
@@ -31,6 +31,73 @@ export default function Home() {
         </button>
 
             
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+
+
+
+
+
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+            
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+
+
+
+
+
+        
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+            
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+
+
+
+        <button  class="flex items-center gap-2 px-7 py-4 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
+          <img width="70" height="70" src="next.svg" />
+          Carnes y Lomos
+        </button>
+        
             
         </section>
 
@@ -38,10 +105,37 @@ export default function Home() {
 
 
 
+        <div class="sticky top-[100vh] bg-blue-500">
+
+<footer class="  w-full text-gray-700  body-font">
+  <div class="flex justify-center ">
+
+  <div class="text-red-700 px-7 font-bold py-4">
+             Footer        
+  </div>
+
+
+  <div class="text-red-700 px-7 font-bold py-4">
+             Footer        
+  </div>
+
+  <div class="text-red-700 px-7 font-bold py-4">
+             Footer        
+  </div>
+
+    
+    </div>
+
+  
+  </footer >
+</div>
 
 
 
-      </div>
+
+
+
+
     </main>
   );
 }
