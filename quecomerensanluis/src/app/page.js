@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="bg-indigo-600 flex flex-col min-h-screen">
+    <main className="bg-indigo-600 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2 border-slate-5 00 p-5 ">
 
 
 
@@ -44,12 +44,7 @@ export default function Home() {
 
 
 
-        <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
-          <img width="45" height="45" src="carnes_lomos.png" />
-          Carnes  <br/>  y Lomos
-        </button>
-
-            
+ 
 
 
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
