@@ -1,7 +1,23 @@
-// /carnes.js
+// /ParrillaRoca.js
+"use client"
 import React from 'react';
+import { useState } from 'react';
+
+import QuantitySelector from '@/components/QuantitySelector';
+
+ 
+
 
 const ParrillaRoca = () => {
+
+
+  const [quantity, setQuantity] = useState(1);
+
+  const handleQuantityChange = (newQuantity) => {
+    setQuantity(newQuantity);
+  };
+
+
   return (
 
 
@@ -44,6 +60,8 @@ const ParrillaRoca = () => {
     <h2 className=" text-left text-base mb-0.5">   Media Docena De Empanadas De Carne Al Horno</h2>
     <h2 className=" text-left   text-sm mb-0.5"> 6 unidades de tapa de masa fresca con carne molida, cebolla, huevo, especias.</h2>
     <p className="  text-left  font-bold text-xl mb-0.5">   $3000</p>
+ 
+    <QuantitySelector quantity={quantity} onQuantityChange={handleQuantityChange} />
   </button>
 
 
