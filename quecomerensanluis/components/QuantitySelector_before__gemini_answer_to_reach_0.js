@@ -13,7 +13,9 @@ const QuantitySelector = ({ quantity, onQuantityChange }) => {
   };
 
   const handleDecrement = () => {
-    onQuantityChange(Math.max(0, quantity - 1));
+    if (quantity > 1) {
+      onQuantityChange(quantity - 1);
+    }
   };
 
   return (

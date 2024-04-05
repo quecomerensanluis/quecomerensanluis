@@ -1,66 +1,11 @@
-// /ParrillaRoca.js
-"use client"
-import React, { useState, useEffect } from 'react';
-import QuantitySelector from '@/components/QuantitySelector';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 const ParrillaRoca = () => {
 
-  const [selectedQuantities, setSelectedQuantities] = useState({});
-
-  const [orderMessage, setOrderMessage] = useState('');
 
 
 
-  useEffect(() => {
-    const orderItems = Object.entries(selectedQuantities)
-      .filter(([, quantity]) => quantity > 0)
-      .map(([dishId, quantity]) => {
-        const dish = dishes.find((d) => d.id === dishId);
-        return `${dish.name} x ${quantity}`;
-      });
 
-    const calculatedOrderMessage =
-      orderItems.length > 0
-        ? `Tu Pedido:\n\n${orderItems.join('\n+ ')}\n\n ---> Total: $${orderItems.reduce(
-            (sum, item) => sum + dishes.find((d) => d.name.includes(item.split(' x ')[0])).price * item.split(' x ')[1],
-            0
-          )}`
-        : '';
 
-    setOrderMessage(calculatedOrderMessage);
-  }, [selectedQuantities]);
 
 
 
@@ -78,10 +23,6 @@ const ParrillaRoca = () => {
      0
     )}`;
    
-
- 
-
-
     try {
      const whatsappEndpoint = `https://api.whatsapp.com/send?phone=YOUR_RESTAURANT_PHONE_NUMBER&text=${encodeURIComponent(
       orderMessage
@@ -113,6 +54,7 @@ const ParrillaRoca = () => {
 
 
 
+  const [selectedQuantities, setSelectedQuantities] = useState({});
 
   const handleQuantityChange = (dishId, newQuantity) => {
     setSelectedQuantities((prevQuantities) => ({
@@ -140,37 +82,7 @@ const ParrillaRoca = () => {
       description: 'Opciones: Coca-Cola, Sprite, Fanta',
       price: 500,
     },
-    {
-      id: 'gaseosa 2',
-      name: 'Gaseosa 2  500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 3',
-      name: 'Gaseosa 3 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 4',
-      name: 'Gaseosa  4 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 5',
-      name: 'Gaseosa  5 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 6 ',
-      name: 'Gaseosa 6 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-
+    // Add more dishes here
   ];
 
   return (
@@ -201,7 +113,7 @@ const ParrillaRoca = () => {
       {/* Display the selected quantities */}
 
       <div className="text-white bg-green-500 mb-5">
-         
+        Total
         {Object.entries(selectedQuantities).map(([dishId, quantity]) => (
           quantity > 0 && ( // Only render if quantity is greater than 0
             <p key={dishId}>
@@ -218,23 +130,13 @@ const ParrillaRoca = () => {
       </div>
       
  
-      {orderMessage && (
-        <div className="flex flex-col bg-white rounded-md shadow-md p-5 mt-auto">
-          {/* Order Message */}
-          <div className="mb-2 text-red">
-            <pre className="  text-red ">{orderMessage}</pre>
-          </div>
-          {/* Conditionally Render Send Order Button */}
-          {Object.values(selectedQuantities).some((quantity) => quantity > 0) && (
-            <button
-              onClick={handleSendOrder}
-              className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 w-full" // Set full width
-            >
-              Send Order
-            </button>
-          )}
-        </div>
-      )}
+
+
+
+      {Object.values(selectedQuantities).some((quantity) => quantity > 0) && ( // Check if any quantity is above 0
+  <button onClick={handleSendOrder} className="bg-green-500 size-28 text-white px-4 py-2 rounded-md hover:bg-green-700">Send Order</button>
+)}
+
 
 
 
