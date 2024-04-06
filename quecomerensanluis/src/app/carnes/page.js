@@ -49,43 +49,66 @@ const Carnes = () => {
   </Link>
 
 
-
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/elporfiao.webp" />
     <h2 class="text-center  mb-0.5">   El Porfiao</h2>
     Desde $3000
   </button>
+  </Link>
 
+
+
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/macchiato.webp" />
     <h2 class="text-center  mb-0.5">   Macchiato</h2>
     Desde $3000
   </button>
+  </Link>
 
+
+
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/miamila.webp" />
     <h2 class="text-center  mb-0.5">   La mia Mila</h2>
     Desde $3000
   </button>
+  </Link>
 
+
+
+
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/tambaleo.webp" />
     <h2 class="text-center  mb-0.5">   Tambaleo</h2>
     Desde $3000
   </button>
+  </Link>
 
+
+
+
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/vaquita.webp" />
     <h2 class="text-center  mb-0.5">   La Vaquita</h2>
     Desde $3000
   </button>
+  </Link>
 
+
+
+
+  <Link href="/carnes/parrilla_roca">
   <button  class="flex flex-col items-center gap-1 px-1 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
     <img width="95" height="95" src="logos/carnes_parrilas/vivalamila.webp" />
     <h2 class="text-center  mb-0.5">   Viva la Mila</h2>
     Desde $3000
   </button>
-
+  </Link>
 
 
 

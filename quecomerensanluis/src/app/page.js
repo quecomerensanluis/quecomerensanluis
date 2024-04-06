@@ -46,72 +46,77 @@ export default function Home() {
 
  
 
-
+<Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="hamburguesas.png" />
           Hamburguesas
         </button>
+        </Link>
 
-
-
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="helado.png" />
           Helado
         </button>
+        </Link>
 
 
 
 
 
 
-
-
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="empanadas.png" />
           Empanadas
         </button>
-
+        </Link>
             
 
 
+
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="pizzas.png" />
           Pizzas
         </button>
+        </Link>
 
 
 
+
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="pastas.png" />
           Pastas
         </button> 
+        </Link>
 
 
 
 
 
-
-        
+        <Link href="./carnes"> 
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="panaderia.png" />
           Panaderìa
         </button>
-
+        </Link>
             
 
-
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="sushi.png" />
           Sushi
         </button>
+        </Link>
 
-
-
+        <Link href="./carnes">
         <button  class="flex flex-col items-center gap-2 px-2 py-2 text-white duration-150 bg-red-800 rounded-lg border border-red-200  hover:bg-indigo-500 active:bg-indigo-700">
           <img width="45" height="45" src="verduras.png" />
           Verduras
         </button>
-        
+        </Link>
             
         </section>
 

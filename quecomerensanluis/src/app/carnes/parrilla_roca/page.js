@@ -320,9 +320,9 @@ const ParrillaRoca = () => {
   return (
 
     
-    <main className="bg-indigo-600 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2 border-slate-500 p-5">
+    <main className="bg-indigo-600 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2   border-slate-500 p-5">
       {/* ... */}
-      <section className="flex items-center justify-center flex-wrap gap-2 mb-64">
+      <section className="  justify-center grid grid-cols-2 flex-wrap gap-2 mb-64">
         {dishes.map((dish) => (
           <div key={dish.id} className="mx-1 ">
             <button className="flex flex-col gap-1 px-2 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200 hover:bg-red-900 active:bg-indigo-700">
@@ -348,7 +348,7 @@ const ParrillaRoca = () => {
       
  
       {orderMessage && (
-        <div className="fixed left-0 right-0 bottom-0 flex flex-col bg-sky-500 rounded-md shadow-md p-2 mt-5">
+        <div className="fixed left-0 right-0 bottom-0 flex flex-col bg-red-700 rounded-md shadow-md p-2 mt-5">
           {/* Order Message */}
           <div className="mb-2 flex items-center justify-center">
             <pre >{orderMessage}</pre>
