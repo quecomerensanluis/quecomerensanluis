@@ -19,15 +19,15 @@ const QuantitySelector = ({ quantity, onQuantityChange }) => {
   return (
     <div  className="flex">
       <button onClick={handleDecrement}>  
-      <IoRemoveCircleOutline size="2em" color="white" /> 
+      <IoRemoveCircleOutline size="2em" color="black" /> 
       </button>
 
-      <span className="w-20 px-5 mx-3 text-center  "> 
+      <span className="w-20 px-5 mx-3 text-slate-800 text-center  "> 
       {quantity} 
       </span>
 
       <button onClick={handleIncrement}>
-         <IoAddCircleOutline size="2em" color="white" /> 
+         <IoAddCircleOutline size="2em" color="black" /> 
           </button>
     </div>
   );

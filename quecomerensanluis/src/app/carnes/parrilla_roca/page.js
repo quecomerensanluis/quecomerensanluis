@@ -320,16 +320,42 @@ const ParrillaRoca = () => {
   return (
 
     
-    <main className="bg-indigo-600 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2   border-slate-500 p-5">
+    <main className="bg-violet-100 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2   border-slate-500 p-5">
+
+      <nav class="flex flex-row items-stretch justify-center bg-blue-200 p-2 mb-2">
+
+          <div class="text-slate-800 text-base md:text-4xl font-bold mx-2"> 
+                <a href="/">  
+                  Qué Comer en San Luis
+                </a> 
+            </div>
+
+      </nav>
+
+
+
+
+      <div class="text-slate-800 font-bold   font-bold mx-1"> 
+          <h2 class="text-center  mb-5">  
+        Parrilla Roca
+            </h2> 
+      </div>
+
+
+
+
+
+
+
       {/* ... */}
-      <section className="  justify-center grid grid-cols-2 flex-wrap gap-2 mb-64">
+      <section className="  justify-center grid grid-cols-1   md:grid-cols-2 flex-wrap gap-2 mb-64">
         {dishes.map((dish) => (
-          <div key={dish.id} className="mx-1 ">
-            <button className="flex flex-col gap-1 px-2 py-1 text-white duration-500 bg-red-800 rounded-lg border border-red-200 hover:bg-red-900 active:bg-indigo-700">
+          <div key={dish.id} className="mx-1 mb-2">
+            <button className="flex flex-col gap-1 px-2 py-1 text-slate-800 duration-500 bg-slate-00 rounded-lg border border-red-500 hover:bg-red-200 active:bg-indigo-700">
               <h2 className="text-left text-base mb-0.5">{dish.name}</h2>
               <h2 className="text-left text-sm mb-0.5">{dish.description}</h2>
               <div className="flex flex-row items-center justify-center gap-8 text-white">
-                <p className="text-left font-bold text-2xl mb-0.5">${dish.price}</p>
+                <p className="text-left font-bold text-2xl text-slate-800 mb-0.5">${dish.price}</p>
                 <QuantitySelector
                   className="bg-slate-950"
                   quantity={selectedQuantities[dish.id] || 0}
@@ -348,7 +374,7 @@ const ParrillaRoca = () => {
       
  
       {orderMessage && (
-        <div className="fixed left-0 right-0 bottom-0 flex flex-col bg-red-700 rounded-md shadow-md p-2 mt-5">
+        <div className="fixed left-0 right-0 bottom-0 flex flex-col flex-wrap bg-red-500 rounded-md shadow-md p-2 mt-5">
           {/* Order Message */}
           <div className="mb-2 flex items-center justify-center">
             <pre >{orderMessage}</pre>
@@ -357,9 +383,9 @@ const ParrillaRoca = () => {
           {Object.values(selectedQuantities).some((quantity) => quantity > 0) && (
             <button
               onClick={handleSendOrder}
-              className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-700 w-full" // Set full width
+              className="bg-green-200 text-slate-800 font-bold text-xl px-4 py-2 rounded-md hover:bg-green-700 w-full" // Set full width
             >
-              Send Order
+              Pedir
             </button>
           )}
         </div>
