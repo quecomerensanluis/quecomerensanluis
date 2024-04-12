@@ -112,8 +112,6 @@ const ParrillaRoca = () => {
 
 
 
-
-
   const handleQuantityChange = (dishId, newQuantity) => {
     setSelectedQuantities((prevQuantities) => ({
       ...prevQuantities,
@@ -123,199 +121,101 @@ const ParrillaRoca = () => {
 
   const dishes = [
     {
-      id: 'empanadas',
-      name: 'Media Docena De Empanadas De Carne Al Horno',
-      description: '6 unidades de tapa de masa fresca con carne molida, cebolla, huevo, especias.',
-      price: 3000,
+      id: 'pizza-margherita',
+      name: 'Pizza Margherita',
+      description: 'Classic pizza with tomato sauce, mozzarella cheese, and fresh basil leaves.',
+      price: 1200,
+      category: '🍕 Pizza',
     },
     {
-      id: 'hamburguesa',
-      name: 'Hamburguesa Completa',
-      description: 'Carne, queso, lechuga, tomate, huevo, bacon y salsas',
-      price: 2500,
+      id: 'pasta-carbonara',
+      name: 'Pasta Carbonara',
+      description: 'Creamy pasta dish with eggs, pancetta, Parmesan cheese, and black pepper.',
+      price: 1500,
+      category: 'pasta',
     },
     {
-      id: 'gaseosa',
-      name: 'Gaseosa 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
+      id: 'salad-caesar',
+      name: 'Caesar Salad',
+      description: 'Romaine lettuce with grilled chicken, croutons, Parmesan cheese, and Caesar dressing.',
+      price: 800,
+      category: 'salad',
     },
     {
-      id: 'gaseosa 2',
-      name: 'Gaseosa 2  500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
+      id: 'pizza-pepperoni',
+      name: 'Pizza Pepperoni',
+      description: 'Pizza with tomato sauce, mozzarella cheese, and pepperoni.',
+      price: 1300,
+      category: '🍕 Pizza',
     },
     {
-      id: 'gaseosa 3',
-      name: 'Gaseosa 3 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 4',
-      name: 'Gaseosa  4 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 5',
-      name: 'Gaseosa  5 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 6 ',
-      name: 'Gaseosa 6 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'empanasdfdas',
-      name: 'Media Docena De Empanadas De Carne Al Horno',
-      description: '6 unidades de tapa de masa fresca con carne molida, cebolla, huevo, especias.',
-      price: 3000,
-    },
-    {
-      id: 'hamburguffsesa',
-      name: 'Hamburguesa Completa',
-      description: 'Carne, queso, lechuga, tomate, huevo, bacon y salsas',
-      price: 2500,
-    },
-    {
-      id: 'gaseogfgsa',
-      name: 'Gaseosa 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosafhh 2',
-      name: 'Gaseosa 2  500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseoshhhga 3',
-      name: 'Gaseosa 3 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseofghsa 4',
-      name: 'Gaseosa  4 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gasedgosa 5',
-      name: 'Gaseosa  5 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gasesdfsa 6 ',
-      name: 'Gaseosa 6 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'empahgfnadas',
-      name: 'Meddfia Docfena De Empanadas De Carne Al Horno',
-      description: '6 unidades de tapa de masa fresca con carne molida, cebolla, huevo, especias.',
-      price: 3000,
-    },
-    {
-      id: 'hambuytrrguesa',
-      name: 'Hamburghuesa Comhgpleta',
-      description: 'Carne, queso, lechuga, tomate, huevo, bacon y salsas',
-      price: 2500,
-    },
-    {
-      id: 'gacvbseosa',
-      name: 'Gaseogfsa 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gasencosa 2',
-      name: 'Gasffeosa 2  500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseobnfsa 3',
-      name: 'Gaseosa 3 50dd0ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseonhmsa 4',
-      name: 'Gaseofgfsa  4 50f0ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseobnmmsa 5',
-      name: 'Gaseosafgga  5 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosmmnna 6 ',
-      name: 'Gaseasfosa 6 500dssdaml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'empanadbnas',
-      name: 'Media Docesddsna De Empanadas De Carne Al Horno',
-      description: '6 unidades de tapa de masa fresca con carne molida, cebolla, huevo, especias.',
-      price: 3000,
-    },
-    {
-      id: 'hamburmbnguesa',
-      name: 'Hamburssguesa Comdpleta',
-      description: 'Carne, queso, lechuga, tomate, huevo, bacon y salsas',
-      price: 2500,
-    },
-    {
-      id: 'gasemnbosa',
-      name: 'Gaffseosa 500dsml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseonbvsa 2',
-      name: 'Gaseossa 2  500dml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseo bsa 3',
-      name: 'Gaseogsa 3 5g00ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseoshha 4',
-      name: 'Gaseofasa  4 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseoshha 5',
-      name: 'Gasedsosa  5 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
-    },
-    {
-      id: 'gaseosa 6 ',
-      name: 'Gaseossa 6 500ml',
-      description: 'Opciones: Coca-Cola, Sprite, Fanta',
-      price: 500,
+      id: 'tiramisu',
+      name: 'Tiramisu',
+      description: 'Coffee-flavored Italian dessert made with ladyfingers, mascarpone cheese, and cocoa powder.',
+      price: 800,
+      category: '🍰 Dessert',
     },
 
+    {
+      id: 'pizza-margher2ita',
+      name: 'Pizza Margh2erita',
+      description: 'Classic pizza with tomato sauce, mozzarella cheese, and fresh basil leaves.',
+      price: 1200,
+      category: '🍕 Pizza',
+    },
+    {
+      id: 'pasta-carbon2ara',
+      name: 'Pasta Carbo2nara',
+      description: 'Creamy pasta dish with eggs, pancetta, Parmesan cheese, and black pepper.',
+      price: 1500,
+      category: 'pasta',
+    },
+    {
+      id: 'salad-ca2esar',
+      name: 'Caesar Sa2lad',
+      description: 'Romaine lettuce with grilled chicken, croutons, Parmesan cheese, and Caesar dressing.',
+      price: 800,
+      category: 'salad',
+    },
+    {
+      id: 'pizza-pepperoni2',
+      name: 'Pizza Pepperon2i',
+      description: 'Pizza with tomato sauce, mozzarella cheese, and pepperoni.',
+      price: 1300,
+      category: '🍕 Pizza',
+    },
+    {
+      id: 'tiramisu2',
+      name: 'Tiramisu2',
+      description: 'Coffee-flavored Italian dessert made with ladyfingers, mascarpone cheese, and cocoa powder.',
+      price: 800,
+      category: '🍰 Dessert',
+    },
+    
   ];
+
+
+
+
+
+
+
+
+  const groupDishes = dishes.reduce((acc, dish) => {
+    if (!acc[dish.category]) {
+      acc[dish.category] = [];
+    }
+    acc[dish.category].push(dish);
+    return acc;
+  }, {});
+
+
+
+
+
+
+
+
 
   return (
 
@@ -353,25 +253,29 @@ Parrilla Roca
 
 
 
-      {/* ... */}
-      <section className="  justify-center grid grid-cols-1   md:grid-cols-2 flex-wrap gap-2 mb-64">
-        {dishes.map((dish) => (
-          <div key={dish.id} className="mx-1 mb-2">
-            <button className="flex flex-col gap-1 px-2 py-1 text-slate-800 duration-500 bg-slate-200 rounded-lg border border-red-200 hover:bg-indigo-200 active:bg-indigo-200">
-              <h2 className="text-left text-base mb-0.5">{dish.name}</h2>
-              <h2 className="text-left text-sm mb-0.5">{dish.description}</h2>
-              <div className="flex flex-row items-center justify-center gap-8 text-white">
-                <p className="text-left font-bold text-2xl text-slate-800 mb-0.5">${dish.price}</p>
-                <QuantitySelector
-                  className="bg-slate-950"
-                  quantity={selectedQuantities[dish.id] || 0}
-                  onQuantityChange={(newQuantity) => handleQuantityChange(dish.id, newQuantity)}
-                />
-              </div>
-            </button>
-          </div>
-        ))}
-      </section>
+<section className="justify-center grid grid-cols-1 md:grid-cols-2 flex-wrap gap-2 mb-64">
+  {Object.entries(groupDishes).map(([category, dishesByCategory]) => (
+    <React.Fragment key={category}>
+      <h2 className="text-xl font-bold mt-8  col-span-full text-slate-800">{category}</h2>
+      {dishesByCategory.map((dish) => (
+        <div key={dish.id} className="mx-1 mb-2 ">
+          <button className="flex flex-col gap-1 px-2 py-1 text-slate-800 duration-500 bg-slate-200 rounded-lg border border-red-200 hover:bg-indigo-200 active:bg-indigo-200">
+            <h2 className="text-left text-base mb-0.5">{dish.name}</h2>
+            <h2 className="text-left text-sm mb-0.5">{dish.description}</h2>
+            <div className="flex flex-row items-center justify-center gap-8 text-white">
+              <p className="text-left font-bold text-2xl text-slate-800 mb-0.5">${dish.price}</p>
+              <QuantitySelector
+                className="bg-slate-950"
+                quantity={selectedQuantities[dish.id] || 0}
+                onQuantityChange={(newQuantity) => handleQuantityChange(dish.id, newQuantity)}
+              />
+            </div>
+          </button>
+        </div>
+      ))}
+    </React.Fragment>
+  ))}
+</section>
 
 
       {/* Display the selected quantities */}

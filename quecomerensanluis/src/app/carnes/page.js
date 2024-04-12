@@ -23,7 +23,7 @@ const Carnes = () => {
 
   <div class="text-slate-800    font-normal mx-8"> 
 <h2 >  
-      Armá tu pedido y mandá por Whatsapp
+Carnes   y Lomos
   </h2> 
   </div>
 
