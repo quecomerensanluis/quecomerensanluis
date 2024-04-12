@@ -53,7 +53,7 @@ const ParrillaRoca = () => {
 
     const calculatedOrderMessage =
       orderItems.length > 0
-        ? `Tu Pedido:\n\n${orderItems.join('\n+ ')}\n\n ---> Total: $${orderItems.reduce(
+        ? `Tu Pedido:\n${orderItems.join('\n+ ')}\n ---> Total: $${orderItems.reduce(
             (sum, item) => sum + dishes.find((d) => d.name.includes(item.split(' x ')[0])).price * item.split(' x ')[1],
             0
           )}`
@@ -73,7 +73,7 @@ const ParrillaRoca = () => {
       return `${dish.name} x ${quantity}`;
      });
    
-    const orderMessage = `Nueva Orden:\n\n${orderItems.join('\n+ ')}\n\n ---> Total: $${orderItems.reduce(
+    const orderMessage = `Hola, quiero hacer un pedido de:\n\n${orderItems.join('\n+ ')}\n\n ---> Total: $${orderItems.reduce(
      (sum, item) => sum + dishes.find((d) => d.name.includes(item.split(' x ')[0])).price * item.split(' x ')[1],
      0
     )}`;
@@ -320,28 +320,34 @@ const ParrillaRoca = () => {
   return (
 
     
-    <main className="bg-violet-100 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2   border-slate-500 p-5">
-
-      <nav class="flex flex-row items-stretch justify-center bg-blue-200 p-2 mb-2">
-
-          <div class="text-slate-800 text-base md:text-4xl font-bold mx-2"> 
-                <a href="/">  
-                  Qué Comer en San Luis
-                </a> 
-            </div>
-
-      </nav>
+    <main className="bg-slate-50 flex flex-col min-h-screen rounded-xl border-8 outline-offset-2   border-slate-500 p-2">
 
 
 
 
-      <div class="text-slate-800 font-bold   font-bold mx-1"> 
-          <h2 class="text-center  mb-5">  
-        Parrilla Roca
-            </h2> 
-      </div>
 
 
+
+<nav class="flex flex-row items-center justify-evenly bg-blue-100 p-2 mb-5 rounded-lg border-16">
+
+<div class="text-slate-800 text-base md:text-4xl font-bold mx-2"> 
+  <a href="/">  
+    Qué Comer en San Luis
+  </a> 
+  </div>
+
+  <div class="text-slate-800    font-normal mx-8"> 
+<h2 >  
+Parrilla Roca
+  </h2> 
+  </div>
+
+</nav>
+
+
+
+
+ 
 
 
 
@@ -351,7 +357,7 @@ const ParrillaRoca = () => {
       <section className="  justify-center grid grid-cols-1   md:grid-cols-2 flex-wrap gap-2 mb-64">
         {dishes.map((dish) => (
           <div key={dish.id} className="mx-1 mb-2">
-            <button className="flex flex-col gap-1 px-2 py-1 text-slate-800 duration-500 bg-slate-00 rounded-lg border border-red-500 hover:bg-red-200 active:bg-indigo-700">
+            <button className="flex flex-col gap-1 px-2 py-1 text-slate-800 duration-500 bg-slate-200 rounded-lg border border-red-200 hover:bg-indigo-200 active:bg-indigo-200">
               <h2 className="text-left text-base mb-0.5">{dish.name}</h2>
               <h2 className="text-left text-sm mb-0.5">{dish.description}</h2>
               <div className="flex flex-row items-center justify-center gap-8 text-white">
@@ -374,18 +380,18 @@ const ParrillaRoca = () => {
       
  
       {orderMessage && (
-        <div className="fixed left-0 right-0 bottom-0 flex flex-col flex-wrap bg-red-500 rounded-md shadow-md p-2 mt-5">
+        <div className="fixed left-0 right-0 bottom-0 flex flex-col flex-wrap bg-blue-100 rounded-md shadow-md p-2 mt-5">
           {/* Order Message */}
-          <div className="mb-2 flex items-center justify-center">
+          <div className="mb-2 flex text-slate-800 text-sm items-center justify-center max-h-40 overflow-y-auto">
             <pre >{orderMessage}</pre>
           </div>
           {/* Conditionally Render Send Order Button */}
           {Object.values(selectedQuantities).some((quantity) => quantity > 0) && (
             <button
               onClick={handleSendOrder}
-              className="bg-green-200 text-slate-800 font-bold text-xl px-4 py-2 rounded-md hover:bg-green-700 w-full" // Set full width
+              className="bg-green-200 text-slate-800 font-bold   text-sm md:text-xl px-4 py-2 rounded-md hover:bg-green-400 w-full" // Set full width
             >
-              Pedir
+              Mandarles WhatsApp con mi pedido
             </button>
           )}
         </div>
